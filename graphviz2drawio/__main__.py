@@ -15,6 +15,7 @@ def main():
     try:
         output = convert(args.to_convert, args.program)
     except BaseException:
+        raise
         stderr.write("Something went wrong, please report\n")
         stderr.write(
             "An automatic crash report can be sent to the developer (no personal or graph information)\n"
